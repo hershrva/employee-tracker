@@ -1,11 +1,11 @@
-# Weather Dashboard Application
+# Employee Tracker
 
 ## Description
 
-- My motivation behind this project was to create an interactive Note Taker that could organize and saves peoples notes regarding tasks they want to complete throughout the day.
-- I built this project to help people plan out their their day by saving their notes and organizing them in a central place where they can delete what they have already accomplished. 
-- This allows for a place to digitally keep their plans to easily access and help organization and motivation. 
-- I learned how to use node and express to save and retrieve data from a JSON file.    
+- My motivation behind this project was to create an interactive prompt to track and maintain employees, roles and departments.
+- I built this project to help users easily manipulate data for employees, their roles and their departments using mysql to maintain data and inquirer to prompt the user for changes or inquiries about tables.
+- This allows for an easy way for users to update data through a simple prompt for them to choose, add or delete employees, roles and departments and change the data in a database.
+- I learned how to use node, mysql, and inquirer to prompt a user, save their inputs, and retrieve data from a database.    
 
 ## Table of Contents 
 
@@ -15,19 +15,19 @@
 
 ## Installation
 
-The application is started by entering the url https://polar-spire-81435-54a21e88dcda.herokuapp.com/ into the browser.  The app is then able to be used without any further installation.
+The application is started by typing "git clone https://github.com/hershrva/employee-tracker.git" into the users Visual Studio Code or any CLI for running Git commands in a new directory.  The user should then install mysql if not already installed.
 
 ## Usage
 
-The application works by opening the url (https://polar-spire-81435-54a21e88dcda.herokuapp.com/) in a browser. (Screenshot #1)
-The user can then click the "Get Started" button to enter into the note taking interface (Screenshot #2).  The user can then click on the note title and enter a title for their note as well as the note text to add comments or clarity on what the note means (Screenshot #3).  After entering the text the user can click the "Save Note" button at the top right to save the note or the "Clear Form" to clear the inputs to write a new note (Screenshot #4).  A second note can be added by simply clicking on the form and entering text and clicking the "Save Button" again.  They can also view their notes by simply clicking on the note to the left, or delete them by clicking the trashcan symbol to the right of each note (Screenshot #5).
+The application works by running "mysql -u root" in the command line after cloning and installing the repository.(Screenshot #1)  After entering mysql the user should enter "SOURCE db/schema.sql;" to create the database and tables, then "SOURCE db/seeds.sql;" to seed the database and tables. The user should then exit by typing in "exit" while in mysql and then type in "npm i" and "npm start" to the command line in the terminal while in the main folder(Screenshot #2).  The program will start allowing the user to access the database and manipulate the data tables for employees, roles, and departments.(Screenshot #3)  They can find eployees by manager and department, update employees roles and manger, view a departments budget, etc.(Screenshot #4) 
+
+A video demonstration can be found here: https://drive.google.com/file/d/1xvPJGbL39-bcmAwlkO23PzMwXOwyFPWk/view
 
 
-![Screenshot](Images/screenshot1.png)
-![Screenshot](Images/screenshot2.png)
-![Screenshot](Images/screenshot3.png)
-![Screenshot](Images/screenshot4.png)
-![Screenshot](Images/screenshot5.png)
+![Screenshot](images/screenshot1.png)
+![Screenshot](images/screenshot2.png)
+![Screenshot](images/screenshot3.png)
+![Screenshot](images/screenshot4.png)
 
 ## License
 
